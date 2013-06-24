@@ -1,3 +1,13 @@
+# coding=utf8
+#
+# http://projecteuler.net/problem=3
+#
+# Largest prime factor
+#
+# The prime factors of 13195 are 5, 7, 13 and 29.
+# What is the largest prime factor of the number 600851475143 ?
+#
+
 def addIfNotIn(a, n):
 	if (n not in a):
 		a.append(n)
@@ -36,4 +46,4 @@ def getPrimeFactors(n):
 	return primeFactors
 
 
-print(getPrimeFactors(600851475143))
+print(max(getPrimeFactors(600851475143)))
